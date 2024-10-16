@@ -1,0 +1,138 @@
+/* 
+font-family: 'Nunito', sans-serif;
+background-color: #fff59d;
+background-color: #1b3039;
+color: #ffbc0e;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff59d;
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b3039;
+    padding: 10px 20px;
+}
+
+.img {
+    height: 80px; 
+}
+
+.nav-link {
+
+    list-style: none;
+    display: flex;
+}
+
+.nav-link li{
+    margin-left: 30px;
+}
+
+.nav-link a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    padding: 10px 10px 10px 10px;
+}
+
+.desktop {
+    
+    border-radius: 20px;
+    background-color: white;
+    margin-left: 20px;
+    
+}
+
+.desktop a {
+    color: #1b3039;
+    font-weight: bold;
+}
+
+.menu-movil {
+    display: none;
+}
+
+@media(max-width:1970px) {
+    body {
+        background-color: #fff59d;
+        font-family: 'Nunito', sans-serif;
+    }
+    
+    .navbar {
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1b3039;
+        padding: 10px 20px;
+    }
+    
+    .img {
+        height: 80px; 
+    }
+    
+    .nav-link {
+        list-style: none;
+        display: flex;
+    }
+    
+    .nav-link li{
+        margin-left: 30px;
+    }
+    
+    .nav-link a {
+        color: white;
+        text-decoration: none;
+        display: flex;
+        padding: 10px 10px 10px 10px;
+    }
+    
+    .desktop {
+        border-radius: 20px;
+        background-color: white;
+        margin-left: 20px;
+        text-decoration: none;
+        
+    }
+    
+    .desktop a {
+        color: #1b3039;
+        font-weight: bold;
+    }
+    
+    .menu-movil {
+        display: none;
+    }
+    
+}
+
+@media (max-width:540px) {
+    .nav-link li {
+        display: none;
+    }
+    .desktop a{
+        display: none;
+    }
+
+    .menu-movil {
+        display: block;
+        background-color: white;
+        border-radius: 20px;
+      
+        
+    }
+    .menu-movil a {
+        color: #1b3039;
+        font-weight: bold;
+    }
+}
